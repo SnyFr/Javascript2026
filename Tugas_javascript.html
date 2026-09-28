@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //berat standar 10kg
+    let bogor = 2000;
+    let depok = 4000;
+    let kotaLain = 6000;
+    let berat = 10;
+
+    let kotapaket = "jakarta";
+    let total;
+
+    switch (kotapaket) {
+      case "depok":
+        total = depok * berat
+        console.log(total);
+        break;
+      case "bogor":
+        total = bogor * berat
+        console.log(total);
+        break;
+      default: 
+        total = kotaLain * berat
+        console.log(total);
+        break;
+    }
+    
+    
+  </script>
+</body>
+</html>
