@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+    javascript bukan C
+    malah meniru C
+    php adalah turunan C 
+    -->
+  <script>
+    //let, var, const
+    //let : 
+    let b = "aji"; //let gabisa dideklarasikan lagi dengan variabel yang sama
+    console.log(b);
+
+    //const 
+    const name = "bambang"; //const biar variabelnya tetap atau kepikiran untuk tidak diubah
+    // name = "bambang123";
+    
+    //operator 
+    const nilai1 = parseInt(10);
+    const nilai2 = parseInt(11);
+    const jumlah = nilai1 + nilai2; 
+    //(+) di js adalah concat atau penggabungan string
+    // bukan penjumlahan, maka ditambahkan parseInt
+    //console.log adalah salah satu fitur buat lihat hasil daripada variable yang ingin dicetak
+    console.log(jumlah);
+
+    //assignment operator : menambahkan/ mengisi nilai ke dalam suatu variabel
+    let total = 100;
+    total += 50; //+= menambahkan 
+    total -= 20; //-= mengurangkan
+
+    console.log(total); //hasilnya 150
+
+    //increment dan decrement : menambah atau mengurang, digunakan di data
+    let nomor = 1;
+    nomor++; //2
+    nomor++; //3
+    nomor--; //2
+
+    //operator perbandingan <, >, === (membandingkan sampai ke tipe data), ==(membandingkan a sm b), !== (tidak sama dengan)
+
+    let nama = "Budi";
+    let confirmasiNama = "Budi";
+    let confirmasi = (nama === confirmasiNama); //hasilnya true (variabelnya sama = budi,tipe datanya sama = string)
+
+    let umur = 20;
+    let batasumur = 17;
+    let batasan = (umur > batasumur); //true ("17 dimulai dari 18 karena bukan sama dengan")
+
+    //operator logika && (AND), || (OR), ! (Not)
+    let budi = "budi";
+    let andi = "andi";
+    (budi && andi); //dua duanya harus true
+
+    let user = "admin";
+    let password = "admin";
+    (user === "admin123" && password === "admin123") //false
+
+    //OR salah satunya bisa true atau optional
+
+    //ternary (shorthand IF)
+    const age = 20;
+    if(age >= 17) {
+      console.log("Dewasa")
+    }else {
+      console.log("masih bocil")
+    }
+
+    const statusAge = age >=17 ? 'Dewasa': 'Anak-anak' //? adalah tanda "maka", : adalah tanda "else/selain itu"
+    console.log(statusAge);
+
+
+
+
+
+
+
+  </script>
+  
+  
+</body>
+</html>

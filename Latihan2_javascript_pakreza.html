@@ -1,0 +1,57 @@
+<!-- if statement
+  -->
+<script>
+  const nilai = 80;
+  const lulus = 75;
+  if(nilai >= lulus) {
+    console.log("selamat, anda lulus")
+  }else {
+    console.log("selamat, anda tidak lulus")//kondisi pengecekan jika tidak sesuai
+  }
+  // ! = not atau tidak
+  const warna = "biru";
+  if (warna !== "biru") {
+    console.log("ia betul biru");
+  }else {
+    console.log("bukan biru");
+  }
+
+  //percabangan yg banyak cabangnya dan kondisi else if statement
+
+  const totalBelanja = 300000;
+  const isMember = true;
+  let diskon = 0;
+  if (isMember && totalBelanja >= 1500000) {
+    diskon = 0.5; //diskon 10%
+  } else if (totalBelanja >= 500000) {
+    diskon = 0.1; //diskon 20%
+  } else{
+    diskon = 0;
+  }
+
+  const potongan = totalBelanja * diskon;
+  const bayar = totalBelanja - potongan;
+
+  //template literal
+  //`` backtik
+
+  //console.log("potongan harga : ", potongan)
+  console.log(`Total Belanja : ${totalBelanja}`);
+  console.log(`Potongan Harga : ${potongan}`)
+  console.log(`Total Bayar : ${bayar}`)
+
+  //switch 
+
+  const color = "Merah";
+  switch (color) {
+    case "biru":
+      console.log("ia biru");
+      break;
+    case "Merah":
+      console.log("ia Merah");
+      break; 
+    default: 
+      console.log("Bukan biru");
+  }
+
+</script>

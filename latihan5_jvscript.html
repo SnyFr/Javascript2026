@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM | Document Object Model</title>
+</head>
+<body>
+  <h1 id="title">tes awal</h1>
+  <p id="description">Deskripsi awal</p>
+  <p id="status">Status awal</p>
+
+  <div id="modul"></div>
+  <ul id="modulUl"></ul>
+
+  <script>
+    const body = document.body;
+    const title = document.getElementById('title')
+    const desc = document.getElementById('description')
+    const status = document.querySelector('#status')
+
+    body.style.backgroundColor = "Red";
+    title.style.color = "white";
+    title.innerText = "PPKD Jakarta Pusat"
+
+    desc.style.color = "white";
+    desc.innerText = "Selamat datang di PPKD Jakarta Pusat";
+    
+    status.style.color = "white";
+    status.innerText = "Tersertifikasi BNSP";
+
+    const listUnit = [
+      "J.8378277.234 - Mengimplementasikan User Interface",
+      "J.2308379.823 - Melakukan Instalasi Software Tools Pemrograman",
+    ];
+    //create element: elemen baru dengan membuat lewat js
+    const modul = document.getElementById('modul');
+    const modulUl = document.getElementById('modulUl')
+
+    //createElement():
+
+    listUnit.forEach((unitText)=>{
+      const itemLi = document.createElement('li');
+
+      itemLi.innerText = unitText;
+      itemLi.style.marginBottom = "8px";
+      itemLi.style.color = "white";
+
+      modulUl.appendChild(itemLi);
+    })
+    const isiModul = document.createElement('p');
+    isiModul.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula scelerisque eleifend. Cras risus purus, aliquet ut erat non, faucibus mollis diam. Nulla consequat arcu turpis, a laoreet felis suscipit non. Vestibulum sed eros ipsum. Donec interdum, felis sed placerat mollis, massa ligula maximus felis, at congue massa turpis id ipsum. Nullam risus sapien, consectetur sit amet urna ut, accumsan condimentum arcu. Aliquam et ipsum vel ligula tincidunt bibendum at nec erat. Sed viverra tempor sapien eu maximus. Sed cursus, augue id vestibulum scelerisque, eros metus ultricies erat, quis malesuada nisi felis sit amet velit. Ut facilisis rutrum nunc, quis lobortis augue fermentum sit amet. Nam id hendrerit eros. Praesent iaculis, ipsum nec commodo consequat, turpis felis fermentum est, sagittis imperdiet sem ante ut justo.";
+    isiModul.style.color = "white";
+
+    modul.appendChild(isiModul);
+
+
+  </script>
+</body>
+</html>

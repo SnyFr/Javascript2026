@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <script>
-    
+
     let teori = 75;
     let praktek = 80;
     let hadir = 75;
     const pelanggaran = false;
-    const rata2 = (teori + praktek)/2;
-    
+    const rata2 = (teori + praktek) / 2;
+
     let nama = "Agil"
     console.log("Nama: ", nama);
     console.log("nilai rata-rata: ", parseFloat(rata2));
 
     if (teori < 75 || praktek < 80 && pelanggaran) {
       console.log("status: ", "tidak lulus");
-    } else if (hadir < 90){
+    } else if (hadir < 90) {
       console.log("status: ", "Tidak lulus, kurang hadir");
     } else {
       console.log("status: ", "lulus");
     }
-
+    
   </script>
 </body>
+
 </html>
